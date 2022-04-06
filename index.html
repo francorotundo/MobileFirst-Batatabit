@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/styleclase.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/tablet.css" media="(min-width:746px)">
+    <link rel="stylesheet" href="./CSS/desktop.css" media="(min-width:900px)">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +50,6 @@
                                 <td class="table__bottom-right table__right">$ 4.96<span class="down"></span></td>
                             </tr>
                         </table>
-                        <!-- <span>i</span> -->
                     </div>
                     <div class="currency-table--date">
                         <p><b>Actualizado:</b> 19 Julio 23:45</p>
@@ -122,17 +123,35 @@
                 <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
             </div>
             <section class="plans-container--slider">
-                <article class="plans-container--card1"></article>
-                <article class="plans-container--card2">
-                    <p class="recommended">Recomendado</p>
+                <article id="container1" class="plans-container--card">
+                    <a class="arrow-left" href="#container2"><span></span></a>
                     <div class="plan-info-container">
                         <h3 class="plan-card--title">Pago Anual</h3>
-                        <p class="plan-card--price"><span>$</span>99</p>
+                        <p class="plan-card--price"><span>$</span>5</p>
+                        <p class="plan-card--saving">*Plan básico para mantenerte informado.</p>
+                        <button class="plan-card--ca">Escoger este<span></span></button>
+                    </div>
+                </article>
+                <article  id="container2" class="plans-container--card">
+                    <p class="recommended">Recomendado</p>
+                    <a class="arrow-right" href="#container1"><span></span></a>
+                    <a class="arrow-left" href="#container3"><span></span></a>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Pago Anual</h3>
+                        <p class="plan-card--price"><span>$</span>49</p>
                         <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual.</p>
                         <button class="plan-card--ca">Escoger este<span></span></button>
                     </div>
                 </article>
-                <article class="plans-container--card3"></article>
+                <article id="container3" class="plans-container--card">
+                    <a class="arrow-right" href="#container2"><span></span></a>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Acceso de por vida</h3>
+                        <p class="plan-card--price"><span>$</span>99</p>
+                        <p class="plan-card--saving">*Ahorras $999+ comparado al plan anual.</p>
+                        <button class="plan-card--ca">Escoger este<span></span></button>  
+                    </div>
+                </article>
             </section>
         </section>
     </main>

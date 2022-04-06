@@ -1,0 +1,8 @@
+.plans-container--slider, .main-tables-container {
+    justify-content: center;
+}
+
+.producto-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+}
